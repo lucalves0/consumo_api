@@ -1,25 +1,25 @@
 class ProdutoModel {
-  final String logradouro;
-  final String quarteirao;
+  final String logradouroId;
+  final String quarteiraoId;
   final String localidade;
-  final String bairro;
-  final String tipoDeImovel;
+  final String bairroId;
+  final String tipoDeImovelId;
 
   ProdutoModel({
-    required this.logradouro,
-    required this.quarteirao,
+    required this.logradouroId,
+    required this.quarteiraoId,
     required this.localidade,
-    required this.bairro,
-    required this.tipoDeImovel,
+    required this.bairroId,
+    required this.tipoDeImovelId,
   });
 
   factory ProdutoModel.fromMap(Map<String, dynamic> map) {
     return ProdutoModel(
-      logradouro: map['logradouro'],
-      quarteirao: map['quarteirao'],
+      logradouroId: map['logradouroId'],
+      quarteiraoId: map['quarteiraoId'],
       localidade: map['localidade'],
-      bairro: map['bairro'],
-      tipoDeImovel: map['tipoDeImovel'],
+      bairroId: map['bairroId'],
+      tipoDeImovelId: map['tipoDeImovelId'],
     );
   }
 }
