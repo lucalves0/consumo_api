@@ -86,7 +86,7 @@ class _HomePageState extends State<HomePage> {
                     ListTile(
                       contentPadding: EdgeInsets.zero,
                       title: Text(
-                        item.logradouro,
+                        item.logradouroId,
                         style: const TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.w600,
@@ -96,7 +96,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      item.bairro,
+                      item.bairroId,
                       style: const TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w400,
